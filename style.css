@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #77adff;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.country {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 700px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 3rem;
+}
+
+#country-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#country-flag {
+    width: 100%;
+    max-width: 500px; /* Limita a largura máxima da bandeira */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 1px solid #eee;
+}
+
+.country-name {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.capital {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Media Query para telas menores, como celulares */
+@media (max-width: 480px) {
+    .country {
+        padding: 25px;
+        margin: auto;
+    }
+
+    .country-name {
+        font-size: 22px;
+    }
+
+    .capital {
+        font-size: 17px;
+    }
+}
